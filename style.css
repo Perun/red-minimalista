@@ -3,8 +3,8 @@ Theme Name: red minimalista
 Theme URI: http://www.perun.net
 Description: Theme for Wordpress 2.x, <a href="http://www.vlad-design.de">Vladimir Simovic</a> aka <a href="http://www.perun.net">Perun</a>. This Theme is Open Source.
 Version: 2.x
-Author: Vladimir Simovic (Perun)
-Author URI: http://www.perun.net
+Author: Vladimir Simoviƒá (aka Perun)
+Author URI: https://www.vladimir-simovic.de
 
 	INHALTSVERZEICHNIS:
 
@@ -15,7 +15,7 @@ Author URI: http://www.perun.net
     2.2.1 ... Seitenleiste aka Sidebar
     2.2.2 ... Inhalt (Content)
     2.2.3 ... Kommentarbereich
-    2.3 ..... Fuss bzw. Fuﬂ aka Footer
+    2.3 ..... Fuss bzw. Fu√ü aka Footer
     3. ...... Spezielle Formatierungen (z.B. fuer Plugins)
 
  1. Allgemeine bzw. Dokumentweite Angaben */
@@ -26,7 +26,7 @@ html {
 body {
     background: #aaa url(img/hintergrund.gif) fixed center bottom repeat-x;
     text-align: center;
-    font: 12px verdana, arial, sans-serif; /* Hoch lebe das heilige Pixel! Nieder mit dem bˆsen em-Tyrann ;-) */
+    font: 12px verdana, arial, sans-serif; /* Hoch lebe das heilige Pixel! Nieder mit dem b√∂sen em-Tyrann ;-) */
     margin: 0;
     padding: 20px 0 0 0;
     height: 100.01%; /* Ich hasse solche "Konstrukte, aber leider notwendig */
@@ -185,7 +185,7 @@ img {
     padding-left: 5px;
 }
 #seitenleiste ul li a {
-    text-transform: lowercase; /* Groﬂbuchstaben sind ein unnˆtiger Luxus */
+    text-transform: lowercase; /* Gro√übuchstaben sind ein unn√∂tiger Luxus */
 }
 
 #seitenleiste li li {
@@ -313,7 +313,7 @@ img {
     margin-bottom: 3px;
 }
 
-/* 2.3 Fuss bzw. Fuﬂbereich aka Footer */
+/* 2.3 Fuss bzw. Fu√übereich aka Footer */
 #fuss {
     background: #f5f5f5 url(img/fuss.gif) repeat-y;
     padding: 15px 20px;
@@ -325,7 +325,7 @@ img {
     text-transform: lowercase;
 }
 
-/* 3. Spezielle Formatierungen z.B. nur f¸r Plugins */
+/* 3. Spezielle Formatierungen z.B. nur f√ºr Plugins */
 #ed_toolbar input {
     border: 1px solid #ccc;
     background: #ddd;
