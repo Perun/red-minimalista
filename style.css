@@ -1,0 +1,365 @@
+ /*
+Theme Name: red minimalista
+Theme URI: http://www.perun.net
+Description: Theme for Wordpress 2.x, <a href="http://www.vlad-design.de">Vladimir Simovic</a> aka <a href="http://www.perun.net">Perun</a>. This Theme is Open Source.
+Version: 2.x
+Author: Vladimir Simovic (Perun)
+Author URI: http://www.perun.net
+
+	INHALTSVERZEICHNIS:
+
+    1. ...... Allgemeine bzw. Dokumentweite Angaben
+    2. ...... Kontainer sog. Wrapper
+    2.1 ..... Kopf bzw. Header
+    2.2. .... Mitte (Middle) (beinhaltet die Seitenleiste und den Inhalt)
+    2.2.1 ... Seitenleiste aka Sidebar
+    2.2.2 ... Inhalt (Content)
+    2.2.3 ... Kommentarbereich
+    2.3 ..... Fuss bzw. Fuß aka Footer
+    3. ...... Spezielle Formatierungen (z.B. fuer Plugins)
+
+ 1. Allgemeine bzw. Dokumentweite Angaben */
+html {
+    height: 100%;
+}
+
+body {
+    background: #aaa url(img/hintergrund.gif) fixed center bottom repeat-x;
+    text-align: center;
+    font: 12px verdana, arial, sans-serif; /* Hoch lebe das heilige Pixel! Nieder mit dem bösen em-Tyrann ;-) */
+    margin: 0;
+    padding: 20px 0 0 0;
+    height: 100.01%; /* Ich hasse solche "Konstrukte, aber leider notwendig */
+}
+
+pre, code, samp {
+    font: 1em 'courier new', courier, monospace;
+    color: #c60;
+}
+
+acronym, abbr, dfn {
+    border-bottom: 1px dashed #999;
+    font-style: normal;
+    cursor: help;
+}
+
+blockquote {
+    padding: 0 15px 0 10px;
+    margin: 15px 0 15px 5px;
+    text-align: justify;
+    color: #555;
+    line-height: 1.35;
+    font-size: 11px;
+    border-left: 5px solid #eee;
+}
+
+a {
+    color: #b00;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+}
+
+img {
+    border: none;
+}
+
+#clearer {
+    clear: both;
+}
+
+
+.center {
+    text-align: center;
+}
+
+/* small */
+.klein {
+    font-size: .9em;
+}
+/* smaller */
+.kleiner {
+    font-size: .8em; /* Und jetzt brauchst du eine Lupe */
+}
+
+/* Hiermit "positioniert" man die Bilder (links = left; rechts = right) */
+.bild-links {
+    float: left;
+    margin: 2px 10px 5px 0;
+}
+
+.bild-rechts {
+    float: right;
+    margin: 2px 0 5px 10px;
+}
+
+/* Kontainer sog. Wrapper */
+#kontainer {
+    width: 760px; /* "Die Rente ist sicher" ... "Ja, dieses Layout ist elastisch" */
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/* 2.1 Kopf bzw. Header */
+#kopf {
+    background: url(img/kopf.gif) no-repeat;
+    height: 125px;
+}
+#kopf h1 {
+    margin: 0;
+    padding: 0 20px;
+    height: 120px;
+}
+
+#kopf a {
+    color: #fd5;
+    font: bold 20px 'trebuchet ms', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 120px;
+}
+
+/* 2.2 Mitte (beinhaltet die Seitenleiste und den Inhalt) */
+#mitte {
+    background: #fff url(img/mitte.gif) repeat-y;
+    padding: 10px 15px 15px 20px;
+}
+
+/* 2.2.1 Seitenleiste aka Sidebar */
+#seitenleiste {
+    width: 200px;
+    float: right;
+    line-height: 1.55;
+    color: #444;
+    background: transparent;
+}
+
+#seitenleiste h2 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    background: url(img/kopf.gif) no-repeat center center;
+    padding: 1px 5px;
+    color: #fd5;
+    font-size: 11px;
+}
+#seitenleiste form {
+    margin: 0 0 20px 0;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+#seitenleiste input.suchfeld {
+    border: 1px solid #ccc;
+    font-size: 11px;
+    padding: 2px;
+    width: 180px;
+    color: #555;
+}
+#seitenleiste input.suchfeld:hover, #seitenleiste input.suchfeld:focus {
+    border: 1px solid #900;
+}
+
+#seitenleiste input.sendebutton {
+    border: 1px solid #ccc;
+    background: #ddd;
+    font-size: 11px;
+    margin-top: 3px;
+    padding: 1px 3px;
+    line-height: 1.2;
+}
+#seitenleiste input.sendebutton:hover  {
+    border: 1px solid #900;
+    background: #b00;
+    color: #fd5;
+}
+
+#seitenleiste ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+#seitenleiste li {
+    border-bottom: 1px solid #ddd;
+    line-height: 1.6;
+    padding-left: 5px;
+}
+#seitenleiste ul li a {
+    text-transform: lowercase; /* Großbuchstaben sind ein unnötiger Luxus */
+}
+
+#seitenleiste li li {
+    margin-left: 10px;
+}
+
+/* 2.2.2 Inhalt */
+#inhalt {
+    float: left;
+    width: 500px;
+    padding-bottom: 15px;
+    line-height: 1.45;
+    color: #444;
+    background: transparent;
+}
+#inhalt p {
+    margin-top: 1em;
+    margin-bottom: 1.1em;
+}
+
+#inhalt a {
+    border-bottom: 1px solid #eee;
+}
+#inhalt a:hover {
+    border-bottom: 1px solid #555;
+}
+
+#inhalt h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: 0;
+    color: #444;
+}
+
+#inhalt h3 {
+    font-size: 15px;
+    margin: 17px 0 5px 0;
+    padding: 0;
+    color: #333;
+    border-bottom: 1px dotted #ddd;
+}
+
+#inhalt h4 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin: 17px 0 5px 0;
+}
+
+#inhalt h2 a, #inhalt h2 a:hover {
+    border-bottom: none;
+}
+
+#inhalt h2.beitrags-titel {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.1;
+}
+#inhalt .beitrags-info, #inhalt .beitrags-info2 {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.2;
+    text-transform: lowercase;
+}
+#inhalt .beitrags-info2 {
+    border-top: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+    padding: 2px 0;
+}
+
+#inhalt #beitrag-info-box {
+    font-size: 11px;
+    margin: 20px 0;
+    padding: 10px;
+    background: #eee;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+}
+
+/*2.2.3 Kommentarbereich*/
+#commentform {
+    border: 1px solid #ddd;
+    background: #eee;
+    padding: 15px;
+}
+
+#commentform textarea, #commentform input {
+    border: 1px solid #ccc;
+    font: normal 1em arial, sans-serif;
+    padding: 2px;
+    color: #555;
+}
+#commentform textarea {
+    width: 450px;
+}
+#commentform textarea:hover, #commentform textarea:focus, #commentform #author:hover, #commentform #author:focus, #commentform #email:hover, #commentform #email:focus, #commentform #url:hover, #commentform #url:focus {
+    border: 1px solid #900;
+}
+
+#commentform #submit {
+    margin-top: 2px;
+    padding: 0 5px;
+}
+
+#commentform #submit, #commentform .ed_button {
+    border: 1px solid #ccc;
+    background: #ddd;
+    color: #333;
+    margin-right: 1px;
+    font-size: 1em;
+}
+#commentform #submit:hover, #commentform .ed_button:hover {
+    border: 1px solid #900;
+    background: #b00;
+    color: #fd5;
+}
+
+#commentlist li {
+    border-bottom: 1px solid #eee;
+}
+
+.kommentar-info {
+    text-transform: lowercase;
+    margin-bottom: 3px;
+}
+
+/* 2.3 Fuss bzw. Fußbereich aka Footer */
+#fuss {
+    background: #f5f5f5 url(img/fuss.gif) repeat-y;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    color: #555;
+}
+#fuss p {
+    margin: 0;
+    text-transform: lowercase;
+}
+
+/* 3. Spezielle Formatierungen z.B. nur für Plugins */
+#ed_toolbar input {
+    border: 1px solid #ccc;
+    background: #ddd;
+    font-size: 11px;
+    margin-right: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#wp_grins {
+    margin-top: 2px;
+}
+
+.pagebar {
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 10px;
+}
+
+.pagebar .this-page {
+    font-weight: bold;
+}
+
+
+#inhalt .pagebar a {
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    background: #eee;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+
+#inhalt .pagebar a:hover {
+    border: 1px solid #900;
+    background: #b00;
+    color: #fd5;
+}
